@@ -1,18 +1,22 @@
 package com.vinay.CRUD.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Student {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
     private int age;
     private String email;
     private int roll;
     private String subject;
+    private boolean deleted;
 
     public String getName() {
         return name;
@@ -49,5 +53,11 @@ public class Student {
     }
     public void setId(long id) {
         this.id = id;
+    }
+    public boolean isDeleted() {
+        return deleted;
+    }
+    public void setDeleted(boolean isDeleted) {
+        this.deleted = isDeleted;
     }
 }
