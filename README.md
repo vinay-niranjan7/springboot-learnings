@@ -1,38 +1,94 @@
 # Spring Boot CRUD API
 
-A simple CRUD REST API built using Spring Boot.
+A simple RESTful CRUD API built using **Java**, **Spring Boot**, **Spring Data JPA**, **Hibernate**, and **MySQL**. This project demonstrates the implementation of Create, Read, Update, Delete, and Soft Delete operations on a Student entity.
 
-## 🚀 Tech Stack
-- Java 25
+---
+
+## 🚀 Features
+
+- Create a Student
+- Get Student by ID
+- Get All Students
+- Update Student Details
+- Delete Student
+- Soft Delete Student
+- RESTful API using Spring Boot
+- MySQL Database Integration
+- Layered Architecture (Controller, Service, Repository)
+
+---
+
+## 🛠 Tech Stack
+
+- Java
 - Spring Boot
 - Spring Data JPA
-- Maven
+- Hibernate
 - MySQL
+- Maven
+- Postman
 
-## ✨ Features
-- Create Student
-- Read Student
-- Update Student
-- Delete Student
+---
 
 ## 📂 Project Structure
 
 ```
-src/
- ├── controller
- ├── entity
- ├── repository
- └── service
+src
+├── main
+│   ├── java
+│   │   └── com.vinay.CRUD
+│   │       ├── controller
+│   │       ├── entity
+│   │       ├── repository
+│   │       ├── service
+│   │       └── CrudApplication.java
+│   └── resources
+│       └── application.properties
 ```
 
-## ▶️ Run the Project
+---
 
-Then open:
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/create` | Create a new student |
+| GET | `/get?id={id}` | Get a student by ID |
+| GET | `/getAll` | Get all students |
+| PUT | `/update?id={id}` | Update a student |
+| DELETE | `/delete?id={id}` | Delete a student |
+| PATCH | `/soft-delete?id={id}` | Soft delete a student |
+
+### Sample Request Body 
+
+```json
+{
+  "name": "Vinay",
+  "age": 20,
+  "email": "vinay@example.com",
+  "roll": 101,
+  "subject": "Computer Science"
+}
+```
+
+### Base URL
 
 ```
-http://localhost:8080
+http://localhost:8080/api/students
 ```
 
-## 👨‍💻 Author
 
-Vinay Niranjan
+# Tools Used
+
+- IntelliJ IDEA
+- MySQL Workbench
+- Postman
+
+---
+
+# Author
+
+**Vinay Niranjan**
+
+GitHub: https://github.com/vinay-niranjan7
