@@ -1,6 +1,6 @@
 # Spring Boot CRUD API
 
-A simple RESTful CRUD API built using **Java**, **Spring Boot**, **Spring Data JPA**, **Hibernate**, and **MySQL**. This project demonstrates the implementation of Create, Read, Update, Delete, and Soft Delete operations on a Student entity.
+A RESTful CRUD API built using **Java**, **Spring Boot**, **Spring Data JPA**, **Hibernate**, and **MySQL**. This project demonstrates Create, Read, Update, Delete, and Soft Delete operations on a Student entity using a layered architecture with DTOs.
 
 ---
 
@@ -12,9 +12,10 @@ A simple RESTful CRUD API built using **Java**, **Spring Boot**, **Spring Data J
 - Update Student Details
 - Delete Student
 - Soft Delete Student
+- DTO (Data Transfer Object) implementation
 - RESTful API using Spring Boot
 - MySQL Database Integration
-- Layered Architecture (Controller, Service, Repository)
+- Layered Architecture (Controller, Service, Repository, DTO)
 
 ---
 
@@ -27,17 +28,19 @@ A simple RESTful CRUD API built using **Java**, **Spring Boot**, **Spring Data J
 - MySQL
 - Maven
 - Postman
+- IntelliJ IDEA
 
 ---
 
 ## 📂 Project Structure
 
-```
+```text
 src
 ├── main
 │   ├── java
 │   │   └── com.vinay.CRUD
 │   │       ├── controller
+│   │       ├── dto
 │   │       ├── entity
 │   │       ├── repository
 │   │       ├── service
@@ -48,19 +51,20 @@ src
 
 ---
 
-
-## API Endpoints
+## 📌 API Endpoints
 
 | Method | Endpoint | Description |
-|--------|----------|-------------|
+|---------|----------|-------------|
 | POST | `/create` | Create a new student |
 | GET | `/get?id={id}` | Get a student by ID |
-| GET | `/getAll` | Get all students |
+| GET | `/getAll` | Get all active students |
 | PUT | `/update?id={id}` | Update a student |
-| DELETE | `/delete?id={id}` | Delete a student |
+| DELETE | `/delete?id={id}` | Delete a student permanently |
 | PATCH | `/soft-delete?id={id}` | Soft delete a student |
 
-### Sample Request Body 
+---
+
+## 📄 Sample Request Body
 
 ```json
 {
@@ -72,22 +76,27 @@ src
 }
 ```
 
-### Base URL
+---
 
-```
+## 🌐 Base URL
+
+```text
 http://localhost:8081/api/students
 ```
 
+---
 
-# Tools Used
+## 🛠 Tools Used
 
 - IntelliJ IDEA
 - MySQL Workbench
 - Postman
+- Git
+- GitHub
 
 ---
 
-# Author
+## 👨‍💻 Author
 
 **Vinay Niranjan**
 
