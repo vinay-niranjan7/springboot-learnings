@@ -2,6 +2,10 @@ package com.vinay.CRUD.controller;
 
 import java.util.List;
 
+import com.vinay.CRUD.dto.CreateStudentRequestDto;
+import com.vinay.CRUD.dto.CreateStudentResponseDto;
+import com.vinay.CRUD.dto.UpdateStudentRequestDto;
+import com.vinay.CRUD.dto.UpdateStudentResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -29,16 +33,16 @@ public class StudentController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity<Student> createStudent(@RequestBody Student student) {
-        Student createdstudent = studentService.createStudent(student);
+    public ResponseEntity<CreateStudentResponseDto> createStudent(@RequestBody CreateStudentRequestDto student) {
+        CreateStudentResponseDto createdstudent = studentService.createStudent(student);
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .body(createdstudent);
     }
 
     @GetMapping("/get")
-    public ResponseEntity<Student> getStudent(@RequestParam Long id) {
-        Student studentRes = studentService.getStudent(id);
+    public ResponseEntity<CreateStudentResponseDto> getStudent(@RequestParam Long id) {
+        CreateStudentResponseDto studentRes = studentService.getStudent(id);
         if (studentRes == null) {
             return ResponseEntity.notFound().build();
         }
@@ -48,8 +52,8 @@ public class StudentController {
     }
     
     @GetMapping("/getAll")
-    public ResponseEntity<List<Student>> getAllStudents() {
-        List<Student> studentList = studentService.getAllStudents();
+    public ResponseEntity<List<CreateStudentResponseDto>> getAllStudents() {
+        List<CreateStudentResponseDto> studentList = studentService.getAllStudents();
         if (studentList.isEmpty()) {
             return ResponseEntity.notFound().build();
         }
@@ -59,8 +63,8 @@ public class StudentController {
             }
 
     @PutMapping("/update")
-    public ResponseEntity<Student> updateStudent(@RequestParam Long id, @RequestBody Student studentreq) {
-        Student studentRes = studentService.updateStudent(id, studentreq);
+    public ResponseEntity<UpdateStudentResponseDto> updateStudent(@RequestParam Long id, @RequestBody UpdateStudentRequestDto studentreq) {
+        UpdateStudentResponseDto studentRes = studentService.updateStudent(id, studentreq);
         if (studentRes == null) {
             return ResponseEntity.notFound().build();
         }
