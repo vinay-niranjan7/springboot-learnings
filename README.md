@@ -1,34 +1,41 @@
 # Spring Boot CRUD API
 
-A RESTful CRUD API built using **Java**, **Spring Boot**, **Spring Data JPA**, **Hibernate**, and **MySQL**. This project demonstrates Create, Read, Update, Delete, and Soft Delete operations on a Student entity using a layered architecture with DTOs.
+A RESTful CRUD API built using **Java**, **Spring Boot**, **Spring Data JPA**, **Hibernate**, and **MySQL**. This project demonstrates best practices for building REST APIs, including DTOs, request validation, global exception handling, and soft delete functionality.
 
 ---
 
 ## 🚀 Features
 
-- Create a Student
-- Get Student by ID
-- Get All Students
-- Update Student Details
-- Delete Student
-- Soft Delete Student
-- DTO (Data Transfer Object) implementation
-- RESTful API using Spring Boot
-- MySQL Database Integration
-- Layered Architecture (Controller, Service, Repository, DTO)
+- ✅ Create Student
+- ✅ Get Student by ID
+- ✅ Get All Students
+- ✅ Update Student
+- ✅ Delete Student (Permanent)
+- ✅ Soft Delete Student
+- ✅ DTO-based Request & Response
+- ✅ Bean Validation (`@Valid`)
+- ✅ Global Exception Handling (`@RestControllerAdvice`)
+- ✅ Custom Exception Handling
+- ✅ Duplicate Resource Validation
+- ✅ Resource Not Found Handling
+- ✅ Validation Error Response
+- ✅ Layered Architecture
+- ✅ MySQL Database Integration
 
 ---
 
 ## 🛠 Tech Stack
 
-- Java
+- Java 17+
 - Spring Boot
 - Spring Data JPA
 - Hibernate
 - MySQL
 - Maven
+- Jakarta Validation
 - Postman
 - IntelliJ IDEA
+- Git & GitHub
 
 ---
 
@@ -42,6 +49,7 @@ src
 │   │       ├── controller
 │   │       ├── dto
 │   │       ├── entity
+│   │       ├── exception
 │   │       ├── repository
 │   │       ├── service
 │   │       └── CrudApplication.java
@@ -55,22 +63,22 @@ src
 
 | Method | Endpoint | Description |
 |---------|----------|-------------|
-| POST | `/create` | Create a new student |
-| GET | `/get?id={id}` | Get a student by ID |
-| GET | `/getAll` | Get all active students |
-| PUT | `/update?id={id}` | Update a student |
-| DELETE | `/delete?id={id}` | Delete a student permanently |
-| PATCH | `/soft-delete?id={id}` | Soft delete a student |
+| POST | `/api/students` | Create Student |
+| GET | `/api/students/{id}` | Get Student by ID |
+| GET | `/api/students` | Get All Students |
+| PUT | `/api/students?id={id}` | Update Student |
+| DELETE | `/api/students?id={id}` | Delete Student |
+| PATCH | `/api/students/soft-delete?id={id}` | Soft Delete Student |
 
 ---
 
-## 📄 Sample Request Body
+## 📥 Sample Create Request
 
 ```json
 {
   "name": "Vinay",
-  "age": 20,
-  "email": "vinay@example.com",
+  "age": 19,
+  "email": "vinayniranjan7@gmail.com",
   "roll": 101,
   "subject": "Computer Science"
 }
@@ -80,19 +88,27 @@ src
 
 ## 🌐 Base URL
 
-```text
-http://localhost:8081/api/students
+```
+http://localhost:8081
+```
+
+Example:
+
+```
+POST http://localhost:8081/api/students
 ```
 
 ---
 
-## 🛠 Tools Used
+## 📌 Highlights
 
-- IntelliJ IDEA
-- MySQL Workbench
-- Postman
-- Git
-- GitHub
+- Layered Architecture
+- DTO Pattern
+- Request Validation
+- Global Exception Handling
+- Clean REST API Design
+- Soft Delete Implementation
+- Custom Error Responses
 
 ---
 
