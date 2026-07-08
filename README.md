@@ -70,6 +70,8 @@ src
 | DELETE | `/api/students?id={id}` | — | `id` | — | Permanently delete a student |
 | PATCH | `/api/students/soft-delete?id={id}` | — | `id` | — | Soft delete a student |
 
+Note: id in the Request Parameter column is passed as a query parameter (e.g., PUT /api/students?id=1).
+
 ---
 
 ## 📥 Sample Create Request
