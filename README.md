@@ -61,14 +61,14 @@ src
 
 ## 📌 API Endpoints
 
-| Method | Endpoint | Description |
-|---------|----------|-------------|
-| POST | `/api/students` | Create Student |
-| GET | `/api/students/{id}` | Get Student by ID |
-| GET | `/api/students` | Get All Students |
-| PUT | `/api/students?id={id}` | Update Student |
-| DELETE | `/api/students?id={id}` | Delete Student |
-| PATCH | `/api/students/soft-delete?id={id}` | Soft Delete Student |
+| Method | Endpoint | Path Variable | Request Parameter | Request Body | Description |
+|---------|----------|---------------|-------------------|--------------|-------------|
+| POST | `/api/students` | — | — | `CreateStudentRequestDto` | Create a new student |
+| GET | `/api/students/{id}` | `id` | — | — | Get a student by ID |
+| GET | `/api/students` | — | — | — | Get all students |
+| PUT | `/api/students?id={id}` | — | `id` | `UpdateStudentRequestDto` | Update an existing student |
+| DELETE | `/api/students?id={id}` | — | `id` | — | Permanently delete a student |
+| PATCH | `/api/students/soft-delete?id={id}` | — | `id` | — | Soft delete a student |
 
 ---
 
@@ -89,13 +89,7 @@ src
 ## 🌐 Base URL
 
 ```
-http://localhost:8081
-```
-
-Example:
-
-```
-POST http://localhost:8081/api/students
+http://localhost:8081/api/students
 ```
 
 ---
