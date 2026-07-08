@@ -1,10 +1,24 @@
 package com.vinay.CRUD.dto;
 
+import jakarta.validation.constraints.*;
+
 public class CreateStudentRequestDto {
+    @NotBlank(message = "Name cannot be null/Empty or blank")
+    @Size(min = 2, max = 50, message = "Student name must be within 2 to 50 character long")
     private String name;
-    private int age;
+
+    @NotNull(message = "Age is required")
+    @Min(value = 18, message = "Student must be atleast 18 years old")
+    private Integer age;
+
+    @NotBlank(message = "Student email cannot be blank")
+    @Email(message = "Student email must be valid")
     private String email;
-    private int roll;
+
+    @NotNull(message = "RollNo is required")
+    private Integer roll;
+
+    @NotBlank(message = "Subject is required")
     private String subject;
 
     public String getName() {
