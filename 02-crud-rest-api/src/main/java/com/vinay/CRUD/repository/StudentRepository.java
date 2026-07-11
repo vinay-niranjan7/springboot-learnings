@@ -1,0 +1,20 @@
+package com.vinay.CRUD.repository;
+
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import com.vinay.CRUD.entity.Student;
+
+@Repository
+public interface StudentRepository extends JpaRepository<Student,Long>{
+
+        Optional<Student> findByIdAndDeletedIsFalse(long id);
+
+        Boolean existsByEmail(String email);
+
+        List<Student> findByDeletedIsFalse();
+    
+}
