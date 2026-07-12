@@ -9,6 +9,7 @@ A collection of small Spring Boot projects created while learning different Spri
 | 01 | Java Servlet User CRUD | Java Servlets, JSP, JDBC CRUD |
 | 02 | CRUD REST API | Spring Boot REST API, CRUD Operations |
 | 03 | Profile Demo | Spring Profiles |
+| 04 | Filter Demo | Servlet Filters, Request Authentication, Logging & Filter Ordering |
 
 > More micro projects will be added as I continue learning Spring Boot.
 
