@@ -1,4 +1,4 @@
-package com.vinay7.filterdemo.filter;
+package com.vinay7.filterdemo.filters;
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
