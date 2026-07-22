@@ -1,10 +1,10 @@
 # Filter Demo
 
-A Spring Boot project demonstrating the implementation of **Servlet Filters** for request authentication and logging.
+A Spring Boot project demonstrating the implementation of **Servlet Filters** for authentication, logging, request/response processing, and filter registration.
 
 ## 📖 Overview
 
-This project showcases how Servlet Filters can intercept HTTP requests before they reach the controller. It implements authentication, request logging, and execution time measurement using custom filters.
+This project explores different ways of implementing and configuring Servlet Filters in Spring Boot. It demonstrates how filters can intercept HTTP requests and responses to perform authentication, logging, request/response modification, and URL-based filtering before and after controller execution.
 
 ---
 
@@ -12,8 +12,14 @@ This project showcases how Servlet Filters can intercept HTTP requests before th
 
 - Custom Authentication Filter
 - Custom Logging Filter
+- Request Body Filter
+- Response Header Filter
+- Response Body Filter
+- Filter Registration using `FilterRegistrationBean`
+- `OncePerRequestFilter` Implementation
 - Filter Ordering using `@Order`
-- Token and API Key Validation
+- URL Pattern Mapping
+- Token & API Key Validation
 - Request & Response Logging
 - Request Processing Time Measurement
 - REST API using Spring Boot
@@ -25,6 +31,7 @@ This project showcases how Servlet Filters can intercept HTTP requests before th
 - Java
 - Spring Boot
 - Spring MVC
+- Jakarta Servlet API
 - Maven
 
 ---
@@ -33,15 +40,23 @@ This project showcases how Servlet Filters can intercept HTTP requests before th
 
 ```
 src
+├── config
+│   └── FilterConfig
 ├── controller
 │   └── StudentController
 ├── dto
-│   └── Student
-├── service
-│   └── StudentService
+│   ├── Student
+│   └── StudentResponseDto
 ├── filter
 │   ├── AuthenticationFilter
-│   └── LoggingFilter
+│   ├── LoggingFilter
+│   ├── RequestFilter
+│   ├── ResponseHeaderFilter
+│   ├── ResponseBodyFilter
+│   ├── DummyFilter
+│   └── SpringDemoFilter
+├── service
+│   └── StudentService
 └── resources
     └── application.properties
 ```
@@ -60,17 +75,26 @@ Authentication Filter
 Logging Filter
       │
       ▼
-Student Controller
+Request Filter
       │
       ▼
-Response
+Controller
+      │
+      ▼
+Response Header Filter
+      │
+      ▼
+Response Body Filter
+      │
+      ▼
+Client Response
 ```
 
 ---
 
 ## 🔐 Authentication
 
-The API expects the following request headers:
+The protected API expects the following request headers:
 
 | Header | Value |
 |---------|-------|
@@ -88,10 +112,10 @@ If either header is missing or invalid, the request is rejected with **401 Unaut
 **POST**
 
 ```
-/students
+/api/students
 ```
 
-Example Body
+### Request Body
 
 ```json
 {
@@ -100,7 +124,7 @@ Example Body
 }
 ```
 
-Required Headers
+### Required Headers
 
 ```
 token: 123
@@ -109,23 +133,37 @@ x-api-key: api123
 
 ---
 
-
 ## 📚 Concepts Practiced
 
 - Servlet Filters
-- Request Interception
-- Authentication
+- Filter Chain
 - Filter Ordering
-- Logging
-- REST Controller
+- Authentication
+- Request Logging
+- Request Body Processing
+- Response Header Modification
+- Response Body Modification
+- Filter Registration using `FilterRegistrationBean`
+- URL Pattern Mapping
+- `OncePerRequestFilter`
+- Request & Response Interception
+- REST API Development
 - Dependency Injection
-- Spring Boot Web
 
 ---
 
 ## 🎯 Learning Outcome
 
-This project helped me understand how Servlet Filters work in Spring Boot, how multiple filters are chained together, and how they can be used for authentication, logging, and request preprocessing before the request reaches the controller.
+This project helped me understand:
+
+- How Servlet Filters intercept requests before reaching the controller.
+- How multiple filters are executed in a chain.
+- How to authenticate requests using custom headers.
+- How to log request and response details.
+- How to read and modify request and response data.
+- How to register filters programmatically using `FilterRegistrationBean`.
+- The difference between the `Filter` interface and `OncePerRequestFilter`.
+- How filter ordering and URL pattern mapping work in Spring Boot.
 
 ---
 
