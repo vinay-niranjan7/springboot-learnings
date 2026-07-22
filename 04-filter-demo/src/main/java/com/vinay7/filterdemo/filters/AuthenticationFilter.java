@@ -10,7 +10,7 @@ import java.util.UUID;
 
 
 
-//@Component
+@Component
 public class AuthenticationFilter implements Filter {
 
     @Override
@@ -26,8 +26,9 @@ public class AuthenticationFilter implements Filter {
                 (HttpServletResponse) servletResponse;
 
         String token = httpServletRequest.getHeader("token");
+        String apiKey = httpServletRequest.getHeader("x-api-key");
 
-        if(token == null || !token.equals("12345")) {
+        if(token == null || !token.equals("12345") || apiKey == null || !apiKey.equals("api123")) {
             httpServletResponse.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
 
             httpServletResponse.setContentType("application/json");
