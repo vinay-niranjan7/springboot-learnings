@@ -50,10 +50,6 @@ This repository serves as my Spring Boot learning journal, where I build small, 
 
 ---
 
-
-
----
-
 ## 👨‍💻 Author
 
 **Vinay Niranjan**
