@@ -10,6 +10,7 @@ A collection of small Spring Boot projects created while learning different Spri
 | 02 | CRUD REST API | Spring Boot REST API, CRUD Operations |
 | 03 | Profile Demo | Spring Profiles |
 | 04 | Filter Demo | Servlet Filters, Authentication, Request/Response Processing & Logging |
+| 05 | Interceptor Demo | Spring MVC Interceptors, Authentication, Authorization & Request Lifecycle |
 
 > More micro projects will be added as I continue exploring Spring Boot and related technologies.
 
