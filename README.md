@@ -11,6 +11,7 @@ A collection of small Spring Boot projects created while learning different Spri
 | 03 | Profile Demo | Spring Profiles |
 | 04 | Filter Demo | Servlet Filters, Authentication, Request/Response Processing & Logging |
 | 05 | Interceptor Demo | Spring MVC Interceptors, Authentication, Authorization & Request Lifecycle |
+| 06 | AOP Basic | Decorator Pattern, Cross-Cutting Concerns, Logging & Execution Time |
 
 > More micro projects will be added as I continue exploring Spring Boot and related technologies.
 
