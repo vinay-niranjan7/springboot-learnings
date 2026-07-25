@@ -48,16 +48,21 @@ This project demonstrates how Spring AOP separates cross-cutting concerns from b
 
 ## 📂 Project Structure
 
-```
+```text
 src
-├── aspect
-│   └── LoggingAspect
-├── controller
-│   └── StudentController
-├── dto
-│   └── Student
-├── service
-│   └── StudentService
+├── main
+│   ├── java
+│   │   └── com.vinay7.aopdemo
+│   │       ├── aspect
+│   │       │   └── LoggingAspect
+│   │       ├── controller
+│   │       │   └── StudentController
+│   │       ├── dto
+│   │       │   └── Student
+│   │       └── service
+│   │           └── StudentService
+│   └── resources
+│       └── application.properties
 ├── POINTCUT_EXPRESSIONS.md
 └── README.md
 ```
@@ -66,18 +71,18 @@ src
 
 ## 📖 Documentation
 
-This project includes an additional guide explaining Spring AOP pointcut expressions in detail.
+This project includes additional documentation to understand Spring AOP pointcut expressions.
 
 | File | Description |
 |------|-------------|
-| **README.md** | Project overview, API endpoints, Spring AOP advice demonstrations, and learning outcomes. |
-| **POINTCUT_EXPRESSIONS.md** | Detailed explanation of Spring AOP pointcut expressions, `execution()` syntax, wildcards (`*`, `..`), pointcut designators (`within`, `target`, `args`, `@annotation`, etc.), and practical examples. |
+| **README.md** | Project overview, API endpoints, demonstrations of all Spring AOP advice types, and learning outcomes. |
+| **[POINTCUT_EXPRESSIONS.md](POINTCUT_EXPRESSIONS.md)** | Detailed explanation of Spring AOP pointcut expressions, `execution()` syntax, wildcards (`*`, `..`), pointcut designators (`within`, `target`, `args`, `@annotation`, etc.), and practical examples. |
 
 > 📌 **Recommended Reading Order**
 >
 > 1. Read this **README.md**.
 > 2. Explore the project source code.
-> 3. Read **POINTCUT_EXPRESSIONS.md** to understand how Spring AOP selects methods for interception.
+> 3. Read **[POINTCUT_EXPRESSIONS.md](POINTCUT_EXPRESSIONS.md)** to understand how Spring AOP selects methods for interception.
 
 ---
 
@@ -137,7 +142,7 @@ Executed before the target method.
 
 - Logging before method execution
 - Reading method arguments using `JoinPoint`
-- Stopping method execution by throwing an exception
+- Preventing method execution by throwing an exception
 
 ### Example Use Cases
 
@@ -164,8 +169,8 @@ Original Response
 
 ```json
 {
-    "name":"Vinay",
-    "age":20
+    "name": "Vinay",
+    "age": 20
 }
 ```
 
@@ -173,8 +178,8 @@ Modified Response
 
 ```json
 {
-    "name":"Vinayak",
-    "age":19
+    "name": "Vinayak",
+    "age": 19
 }
 ```
 
@@ -275,7 +280,7 @@ Intercepted request calling again
 dummyMethod called
 ```
 
-This demonstrates that `@Around` advice has complete control over the execution of the target method.
+This demonstrates that `@Around` advice provides complete control over the execution of the target method.
 
 ---
 
@@ -337,11 +342,9 @@ This project helped me understand:
 
 ## 📚 Additional Resources
 
-For a detailed explanation of Spring AOP pointcut expressions, syntax, wildcards, and practical examples used in this project, refer to:
+For a detailed explanation of Spring AOP pointcut expressions, syntax, wildcards, and practical examples used in this project, refer to **[POINTCUT_EXPRESSIONS.md](POINTCUT_EXPRESSIONS.md)**.
 
-- **POINTCUT_EXPRESSIONS.md**
-
-This document explains:
+This document covers:
 
 - `execution()` expression syntax
 - Wildcards (`*`, `..`)
@@ -350,8 +353,14 @@ This document explains:
 - Matching by package
 - Matching by arguments
 - Matching by return type
-- Pointcut designators
+- Pointcut designators (`within`, `target`, `args`, `@annotation`, etc.)
 - Practical Spring AOP examples
+
+---
+
+## ⭐ If You Found This Project Helpful
+
+If this project helped you learn Spring AOP, consider giving the repository a ⭐ on GitHub.
 
 ---
 
