@@ -58,8 +58,26 @@ src
 │   └── Student
 ├── service
 │   └── StudentService
-
+├── POINTCUT_EXPRESSIONS.md
+└── README.md
 ```
+
+---
+
+## 📖 Documentation
+
+This project includes an additional guide explaining Spring AOP pointcut expressions in detail.
+
+| File | Description |
+|------|-------------|
+| **README.md** | Project overview, API endpoints, Spring AOP advice demonstrations, and learning outcomes. |
+| **POINTCUT_EXPRESSIONS.md** | Detailed explanation of Spring AOP pointcut expressions, `execution()` syntax, wildcards (`*`, `..`), pointcut designators (`within`, `target`, `args`, `@annotation`, etc.), and practical examples. |
+
+> 📌 **Recommended Reading Order**
+>
+> 1. Read this **README.md**.
+> 2. Explore the project source code.
+> 3. Read **POINTCUT_EXPRESSIONS.md** to understand how Spring AOP selects methods for interception.
 
 ---
 
@@ -78,7 +96,7 @@ src
 ```json
 {
     "name": "Vinay",
-    "age": 20,
+    "age": 20
 }
 ```
 
@@ -87,7 +105,7 @@ src
 ```json
 {
     "name": "Vinay",
-    "age": 20,
+    "age": 20
 }
 ```
 
@@ -115,13 +133,13 @@ vinay
 
 Executed before the target method.
 
-Demonstrates:
+### Demonstrates
 
-- Logging before execution
+- Logging before method execution
 - Reading method arguments using `JoinPoint`
-- Preventing method execution by throwing an exception
+- Stopping method execution by throwing an exception
 
-Example use cases:
+### Example Use Cases
 
 - Authentication
 - Authorization
@@ -134,13 +152,13 @@ Example use cases:
 
 Executed only when the target method completes successfully.
 
-Demonstrates:
+### Demonstrates
 
 - Accessing returned object
 - Modifying returned object
 - Logging successful execution
 
-Example:
+### Example
 
 Original Response
 
@@ -166,12 +184,12 @@ Modified Response
 
 Executed only when the target method throws an exception.
 
-Demonstrates:
+### Demonstrates
 
 - Accessing thrown exception
 - Logging exception details
 
-Example Output
+### Example Output
 
 ```
 Exception type: java.lang.RuntimeException
@@ -182,9 +200,9 @@ Exception Message: Some error happened
 
 ## 4️⃣ After Advice (`@After`)
 
-Executed after method completion regardless of whether it succeeds or fails.
+Executed after method completion regardless of whether the method succeeds or fails.
 
-Demonstrates:
+### Demonstrates
 
 - Cleanup logic
 - Resource release
@@ -196,15 +214,15 @@ Demonstrates:
 
 Provides complete control over method execution.
 
-Demonstrates:
+### Demonstrates
 
-- Executing code before target method
-- Executing code after target method
+- Executing code before the target method
+- Executing code after the target method
 - Exception handling
 - Finally block execution
 - Calling `joinPoint.proceed()`
 
-Example Flow
+### Example Flow
 
 ```
 Starting : createStudent
@@ -219,19 +237,19 @@ Execution Completed
 
 Demonstrates modifying method arguments before execution.
 
-Original
+### Original
 
 ```
 vinay
 ```
 
-Modified by Aspect
+### Modified by Aspect
 
 ```
 VINAY
 ```
 
-Returned Response
+### Returned Response
 
 ```
 VINAY : String Intercepted
@@ -249,7 +267,7 @@ This is achieved by:
 
 The active implementation demonstrates calling the target method twice.
 
-Execution Flow
+### Execution Flow
 
 ```
 dummyMethod called
@@ -257,13 +275,13 @@ Intercepted request calling again
 dummyMethod called
 ```
 
-This shows that `@Around` advice has complete control over how many times the target method executes.
+This demonstrates that `@Around` advice has complete control over the execution of the target method.
 
 ---
 
 ## 📚 Concepts Practiced
 
-- Aspect-Oriented Programming
+- Aspect-Oriented Programming (AOP)
 - Spring AOP
 - AspectJ Annotations
 - `@Aspect`
@@ -290,28 +308,50 @@ This shows that `@Around` advice has complete control over how many times the ta
 
 This project helped me understand:
 
-- What Aspect-Oriented Programming is.
-- Why AOP is useful for cross-cutting concerns.
+- What Aspect-Oriented Programming (AOP) is.
+- Why AOP is useful for separating cross-cutting concerns.
 - How Spring creates proxy objects for aspects.
 - How to define pointcuts using AspectJ expressions.
+- How Spring intercepts method execution.
 - The lifecycle of all five advice types.
 - How to access method arguments using `JoinPoint`.
 - How to modify method arguments using `ProceedingJoinPoint`.
-- How to modify return values.
-- How to intercept exceptions.
-- How `@Around` advice provides full control over method execution.
+- How to modify return values using `@AfterReturning`.
+- How to intercept exceptions using `@AfterThrowing`.
+- How `@Around` advice provides complete control over method execution.
 
 ---
 
 ## 🚀 Future Improvements
 
-- Custom Pointcuts using `@Pointcut`
-- Applying aspects to multiple services
-- Custom annotations with AOP
+- Reusable Pointcuts using `@Pointcut`
+- Applying aspects across multiple services
+- Custom Annotation-Based AOP
 - Performance Monitoring Aspect
 - Audit Logging Aspect
 - Security Aspect
 - Transaction Management
+- Global Logging Framework
+
+---
+
+## 📚 Additional Resources
+
+For a detailed explanation of Spring AOP pointcut expressions, syntax, wildcards, and practical examples used in this project, refer to:
+
+- **POINTCUT_EXPRESSIONS.md**
+
+This document explains:
+
+- `execution()` expression syntax
+- Wildcards (`*`, `..`)
+- Matching by method
+- Matching by class
+- Matching by package
+- Matching by arguments
+- Matching by return type
+- Pointcut designators
+- Practical Spring AOP examples
 
 ---
 
