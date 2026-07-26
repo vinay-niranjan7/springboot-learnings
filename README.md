@@ -19,18 +19,18 @@ A collection of small Spring Boot projects created while learning different Spri
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
 
 - Java
 - Spring Boot
 - Spring MVC
-- Maven
-- REST APIs
-- Jakarta Servlet
+- Spring AOP
+- Java Servlets
 - JSP
 - JDBC
-- MySQL
-- Postman
+- Maven
+- REST APIs
+- AspectJ
 
 ---
 
@@ -43,6 +43,10 @@ springboot-learnings
 ├── 02-crud-rest-api
 ├── 03-profiledemo
 ├── 04-filter-demo
+├── 05-interceptor-demo
+├── 06-aop-basic
+├── 07-aop-demo
+├── 08-aop-custom-annotation
 └── README.md
 ```
 
