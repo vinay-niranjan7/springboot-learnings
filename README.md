@@ -13,6 +13,7 @@ A collection of small Spring Boot projects created while learning different Spri
 | 05 | Interceptor Demo | Spring MVC Interceptors, Authentication, Authorization & Request Lifecycle |
 | 06 | AOP Basic | Decorator Pattern, Cross-Cutting Concerns, Logging & Execution Time |
 | 07 | AOP Demo | Spring AOP, AspectJ, Before/After Advice, Around Advice & Pointcuts |
+| 08 |	AOP Custom Annotation |	Custom Annotations, Annotation Binding, Execution Time Monitoring & Performance Logging |
 
 > More micro projects will be added as I continue exploring Spring Boot and related technologies.
 
