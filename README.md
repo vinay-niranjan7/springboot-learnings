@@ -1,43 +1,121 @@
 # 🌱 Spring Boot Learnings
 
-A collection of small Spring Boot projects created while learning different Spring Boot concepts. Each project focuses on a specific concept and provides a hands-on implementation to strengthen practical understanding.
-
-## 📚 Micro Projects
-
-| No. | Project | Topic |
-|-----|---------|-------|
-| 01 | Java Servlet User CRUD | Java Servlets, JSP, JDBC CRUD |
-| 02 | CRUD REST API | Spring Boot REST API, CRUD Operations |
-| 03 | Profile Demo | Spring Profiles |
-| 04 | Filter Demo | Servlet Filters, Authentication, Request/Response Processing & Logging |
-| 05 | Interceptor Demo | Spring MVC Interceptors, Authentication, Authorization & Request Lifecycle |
-| 06 | AOP Basic | Decorator Pattern, Cross-Cutting Concerns, Logging & Execution Time |
-| 07 | AOP Demo | Spring AOP, AspectJ, Before/After Advice, Around Advice & Pointcuts |
-| 08 | AOP Custom Annotation | Custom Annotations, Annotation Binding, Execution Time Monitoring & Performance Logging |
-| 09 | Spring JDBC Demo | Spring JDBC, JdbcTemplate, CRUD Operations, BeanPropertyRowMapper, Custom RowMapper & MySQL Integration |
-
-> More micro projects will be added as I continue exploring Spring Boot and related technologies.
+A collection of hands-on Spring Boot microprojects created while learning various Spring Boot concepts. Each project focuses on a specific topic and demonstrates its practical implementation through REST APIs and real-world examples.
 
 ---
 
-## 🛠️ Technologies Used
+# 📚 Micro Projects
 
-- Java
+| No. | Project | Topics Covered | Status |
+|-----|---------|----------------|--------|
+| 01 | Servlet User CRUD | Java Servlets, JSP, JDBC CRUD Operations | ✅ |
+| 02 | CRUD REST API | Spring Boot REST APIs, CRUD Operations | ✅ |
+| 03 | Profile Demo | Spring Profiles | ✅ |
+| 04 | Filter Demo | Servlet Filters, Authentication, Logging, Filter Ordering | ✅ |
+| 05 | Interceptor Demo | Spring MVC Interceptors, Authentication, Authorization, Logging | ✅ |
+| 06 | AOP Basic | Spring AOP, Advice Types, Pointcuts | ✅ |
+| 07 | AOP Demo | Logging Aspect, Around Advice, Method Arguments & Return Values | ✅ |
+| 08 | AOP Custom Annotation | Custom Annotation, Custom Pointcuts, Logging Aspect | ✅ |
+| 09 | Spring JDBC Demo | JdbcTemplate, CRUD Operations, RowMapper, SQL Queries | ✅ |
+| 10 | Hibernate JPA Demo | Hibernate ORM, Spring Data JPA, Entity Mapping, Embedded Objects, Collections, Transactions | ✅ |
+
+---
+
+# 🛠️ Tech Stack
+
+### Backend
+
+- Java 25
 - Spring Boot
 - Spring MVC
+- Spring Data JPA
+- Hibernate ORM
 - Spring JDBC
 - Spring AOP
+
+### Database
+
+- MySQL
+
+### Build Tool
+
+- Maven
+
+### APIs & Testing
+
+- REST APIs
+- Postman
+
+### Java EE
+
 - Java Servlets
 - JSP
-- JDBC
-- MySQL
-- Maven
-- REST APIs
-- AspectJ
 
 ---
 
-## 📁 Repository Structure
+# 📖 Concepts Covered
+
+## Spring Boot
+
+- REST APIs
+- Dependency Injection
+- Bean Management
+- Configuration
+- Profiles
+
+## Spring MVC
+
+- Controllers
+- Request Mapping
+- Path Variables
+- Request Parameters
+- Request Body
+- ResponseEntity
+
+## Servlet
+
+- Servlet API
+- Filters
+- Authentication Filter
+- Logging Filter
+
+## Spring AOP
+
+- Aspect
+- Pointcuts
+- Before Advice
+- After Advice
+- Around Advice
+- Custom Annotation
+- Logging
+
+## Spring JDBC
+
+- JdbcTemplate
+- CRUD Operations
+- BeanPropertyRowMapper
+- Custom RowMapper
+- SQL Queries
+
+## Hibernate & JPA
+
+- Entity Mapping
+- Table Mapping
+- Primary Keys
+- Column Mapping
+- Embedded Objects
+- Attribute Overrides
+- Element Collection
+- Enum Mapping
+- LOB Mapping
+- Attribute Converter
+- Transient Fields
+- Dirty Checking
+- Transactions
+
+---
+
+# 📁 Repository Structure
 
 ```text
 springboot-learnings
@@ -51,41 +129,26 @@ springboot-learnings
 ├── 07-aop-demo
 ├── 08-aop-custom-annotation
 ├── 09-spring-jdbc-demo
-└── README.md
+└── 10-hibernate-jpa-demo
 ```
 
 ---
 
-## 🎯 Purpose
+# 🎯 Purpose
 
-This repository serves as my Spring Boot learning journal, where I build small, focused projects to understand individual concepts before applying them to larger real-world applications. Each project is designed to explore one concept at a time, making it easier to learn, revise, and reference in the future.
-
----
-
-## 🚀 Upcoming Projects
-
-- Spring Data JPA
-- Hibernate ORM
-- Hibernate Relationships
-- Spring Validation
-- Global Exception Handling
-- Spring Security
-- JWT Authentication
-- File Upload & Download
-- Spring Scheduler
-- Spring Caching
-- Spring Events
-- Email Integration
-- Spring Boot Testing
-- Docker with Spring Boot
-- Spring AI
+This repository documents my Spring Boot learning journey through small, focused projects. Every project introduces a new concept while reinforcing previous topics with practical implementation.
 
 ---
 
-## 👨‍💻 Author
+
+# 👨‍💻 Author
 
 **Vinay Niranjan**
 
+B.Tech CSE Student | Java Full Stack Developer
+
 GitHub: https://github.com/vinay-niranjan7
 
-⭐ If you find this repository helpful, consider giving it a **Star** on GitHub.
+---
+
+⭐ If you found this repository helpful, consider giving it a **Star**.
