@@ -18,6 +18,7 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 | 08 | AOP Custom Annotation | Custom Annotation, Custom Pointcuts, Logging Aspect | ✅ |
 | 09 | Spring JDBC Demo | JdbcTemplate, CRUD Operations, RowMapper, SQL Queries | ✅ |
 | 10 | Hibernate JPA Demo | Hibernate ORM, Spring Data JPA, Entity Mapping, Embedded Objects, Collections, Transactions | ✅ |
+| 11 | Hibernate Internals Demo | Persistence Context, Entity Lifecycle, EntityManager, EntityManagerFactory, First-Level Cache, Dirty Checking, Flush vs Commit, Transactions | ✅ |
 
 ---
 
@@ -111,6 +112,14 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 - Attribute Converter
 - Transient Fields
 - Dirty Checking
+- Persistence Context
+- EntityManager
+- EntityManagerFactory
+- Session
+- SessionFactory
+- Entity Lifecycle
+- First-Level Cache
+- Flush vs Commit
 - Transactions
 
 ---
@@ -129,7 +138,8 @@ springboot-learnings
 ├── 07-aop-demo
 ├── 08-aop-custom-annotation
 ├── 09-spring-jdbc-demo
-└── 10-hibernate-jpa-demo
+├── 10-hibernate-jpa-demo
+└── 11-hibernateinternalsdemo
 ```
 
 ---
@@ -139,7 +149,6 @@ springboot-learnings
 This repository documents my Spring Boot learning journey through small, focused projects. Every project introduces a new concept while reinforcing previous topics with practical implementation.
 
 ---
-
 
 # 👨‍💻 Author
 
