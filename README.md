@@ -19,6 +19,7 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 | 09 | Spring JDBC Demo | JdbcTemplate, CRUD Operations, RowMapper, SQL Queries | ✅ |
 | 10 | Hibernate JPA Demo | Hibernate ORM, Spring Data JPA, Entity Mapping, Embedded Objects, Collections, Transactions | ✅ |
 | 11 | Hibernate Internals Demo | Persistence Context, Entity Lifecycle, EntityManager, EntityManagerFactory, First-Level Cache, Dirty Checking, Flush vs Commit, Transactions | ✅ |
+| 12 | JPA Relations Demo | One-to-One, One-to-Many, Many-to-One, Many-to-Many, Bidirectional Relationships, Cascade Operations | ✅ |
 
 ---
 
@@ -121,6 +122,12 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 - First-Level Cache
 - Flush vs Commit
 - Transactions
+- One-to-One Mapping
+- One-to-Many Mapping
+- Many-to-One Mapping
+- Many-to-Many Mapping
+- Bidirectional Relationships
+- Cascade Operations
 
 ---
 
@@ -139,7 +146,8 @@ springboot-learnings
 ├── 08-aop-custom-annotation
 ├── 09-spring-jdbc-demo
 ├── 10-hibernate-jpa-demo
-└── 11-hibernateinternalsdemo
+├── 11-hibernateinternalsdemo
+└── 12-jpa-relations-demo
 ```
 
 ---
