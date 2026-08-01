@@ -20,6 +20,7 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 | 10 | Hibernate JPA Demo | Hibernate ORM, Spring Data JPA, Entity Mapping, Embedded Objects, Collections, Transactions | ✅ |
 | 11 | Hibernate Internals Demo | Persistence Context, Entity Lifecycle, EntityManager, EntityManagerFactory, First-Level Cache, Dirty Checking, Flush vs Commit, Transactions | ✅ |
 | 12 | JPA Relations Demo | One-to-One, One-to-Many, Many-to-One, Many-to-Many, Bidirectional Relationships, Cascade Operations | ✅ |
+| 13 | JPA Cascading Demo | JPA Cascading, CascadeType, Lazy Loading, FetchType.LAZY, N+1 Problem, EntityGraph | ✅ |
 
 ---
 
@@ -128,6 +129,12 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 - Many-to-Many Mapping
 - Bidirectional Relationships
 - Cascade Operations
+- CascadeType
+- Lazy Loading
+- Eager vs Lazy Fetching
+- FetchType.LAZY
+- N+1 Query Problem
+- EntityGraph
 
 ---
 
@@ -147,7 +154,8 @@ springboot-learnings
 ├── 09-spring-jdbc-demo
 ├── 10-hibernate-jpa-demo
 ├── 11-hibernateinternalsdemo
-└── 12-jpa-relations-demo
+├── 12-jpa-relations-demo
+└── 13-jpa-cascading-demo
 ```
 
 ---
