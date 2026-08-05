@@ -20,7 +20,8 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 | 10 | Hibernate JPA Demo | Hibernate ORM, Spring Data JPA, Entity Mapping, Embedded Objects, Collections, Transactions | ✅ |
 | 11 | Hibernate Internals Demo | Persistence Context, Entity Lifecycle, EntityManager, EntityManagerFactory, First-Level Cache, Dirty Checking, Flush vs Commit, Transactions | ✅ |
 | 12 | JPA Relations Demo | One-to-One, One-to-Many, Many-to-One, Many-to-Many, Bidirectional Relationships, Cascade Operations | ✅ |
-| 13 | JPA Cascading Demo | JPA Cascading, CascadeType, Lazy Loading, FetchType.LAZY, N+1 Problem, EntityGraph | ✅ |
+| 13 | JPA Cascading & Lazy Loading Demo | JPA Cascading, CascadeType, Lazy Loading, FetchType.LAZY, N+1 Problem, EntityGraph | ✅ |
+| 14 | Spring Data JPA Demo | Repository Hierarchy, JpaRepository, CRUD Operations, Derived Query Methods, Native Queries, JPQL, Pagination, Sorting | ✅ |
 
 ---
 
@@ -135,6 +136,28 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 - FetchType.LAZY
 - N+1 Query Problem
 - EntityGraph
+- Repository
+- CrudRepository
+- ListCrudRepository
+- PagingAndSortingRepository
+- ListPagingAndSortingRepository
+- JpaRepository
+- Repository Hierarchy
+- Repository Proxy
+- Derived Query Methods
+- Query Method Keywords
+- @Query Annotation
+- Native SQL Queries
+- JPQL (Java Persistence Query Language)
+- Parameter Binding
+- Optional
+- Pagination
+- Pageable
+- PageRequest
+- Page
+- Slice
+- Sorting
+- Sort
 
 ---
 
@@ -155,7 +178,8 @@ springboot-learnings
 ├── 10-hibernate-jpa-demo
 ├── 11-hibernateinternalsdemo
 ├── 12-jpa-relations-demo
-└── 13-jpa-cascading-demo
+├── 13-jpa-cascading-lazyloading-demo
+└── 14-spring-data-jpa-demo
 ```
 
 ---
