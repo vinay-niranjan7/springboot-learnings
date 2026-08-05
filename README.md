@@ -22,6 +22,7 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 | 12 | JPA Relations Demo | One-to-One, One-to-Many, Many-to-One, Many-to-Many, Bidirectional Relationships, Cascade Operations | ✅ |
 | 13 | JPA Cascading & Lazy Loading Demo | JPA Cascading, CascadeType, Lazy Loading, FetchType.LAZY, N+1 Problem, EntityGraph | ✅ |
 | 14 | Spring Data JPA Demo | Repository Hierarchy, JpaRepository, CRUD Operations, Derived Query Methods, Native Queries, JPQL, Pagination, Sorting | ✅ |
+| 15 | Transaction Demo | Database Transactions, ACID Properties, @Transactional, Transaction Boundary, Commit, Rollback, JDBC, JPA & Hibernate Transactions | ✅ |
 
 ---
 
@@ -158,6 +159,21 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 - Slice
 - Sorting
 - Sort
+- Database Transactions
+- ACID Properties
+- Atomicity
+- Consistency
+- Isolation
+- Durability
+- Transaction Boundary
+- @Transactional
+- Begin
+- Commit
+- Rollback
+- JDBC Transactions
+- JPA Transactions
+- Hibernate Transactions
+- Spring Transaction Management
 
 ---
 
@@ -179,7 +195,8 @@ springboot-learnings
 ├── 11-hibernateinternalsdemo
 ├── 12-jpa-relations-demo
 ├── 13-jpa-cascading-lazyloading-demo
-└── 14-spring-data-jpa-demo
+├── 14-spring-data-jpa-demo
+└── 15-transaction-demo
 ```
 
 ---
