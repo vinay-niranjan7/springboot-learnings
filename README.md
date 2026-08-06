@@ -23,6 +23,7 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 | 13 | JPA Cascading & Lazy Loading Demo | JPA Cascading, CascadeType, Lazy Loading, FetchType.LAZY, N+1 Problem, EntityGraph | ✅ |
 | 14 | Spring Data JPA Demo | Repository Hierarchy, JpaRepository, CRUD Operations, Derived Query Methods, Native Queries, JPQL, Pagination, Sorting | ✅ |
 | 15 | Transaction Intro Demo | Database Transactions, ACID Properties, @Transactional, Transaction Boundary, Commit, Rollback, JDBC, JPA & Hibernate Transactions | ✅ |
+| 16 | Transaction Propagation & Isolation Demo | Transaction Propagation, Isolation Levels, Concurrency Problems, @Transactional, Propagation, Rollback Rules | ✅ |
 
 ---
 
@@ -174,6 +175,23 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 - JPA Transactions
 - Hibernate Transactions
 - Spring Transaction Management
+- Transaction Propagation
+- Propagation.REQUIRED
+- Propagation.REQUIRES_NEW
+- Propagation.SUPPORTS
+- Propagation.MANDATORY
+- Propagation.NOT_SUPPORTED
+- Propagation.NEVER
+- Propagation.NESTED
+- Isolation Levels
+- READ_UNCOMMITTED
+- READ_COMMITTED
+- REPEATABLE_READ
+- SERIALIZABLE
+- Dirty Read
+- Non-Repeatable Read
+- Phantom Read
+- Rollback Rules
 
 ---
 
@@ -196,7 +214,8 @@ springboot-learnings
 ├── 12-jpa-relations-demo
 ├── 13-jpa-cascading-lazyloading-demo
 ├── 14-spring-data-jpa-demo
-└── 15-transaction-intro-demo
+├── 15-transaction-intro-demo
+└── 16-transaction-propagation-isolation-demo
 ```
 
 ---
