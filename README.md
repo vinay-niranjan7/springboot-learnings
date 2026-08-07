@@ -24,6 +24,7 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 | 14 | Spring Data JPA Demo | Repository Hierarchy, JpaRepository, CRUD Operations, Derived Query Methods, Native Queries, JPQL, Pagination, Sorting | ✅ |
 | 15 | Transaction Intro Demo | Database Transactions, ACID Properties, @Transactional, Transaction Boundary, Commit, Rollback, JDBC, JPA & Hibernate Transactions | ✅ |
 | 16 | Transaction Propagation & Isolation Demo | Transaction Propagation, Isolation Levels, Concurrency Problems, @Transactional, Propagation, Rollback Rules | ✅ |
+| 17 | Spring Security Basics Demo | Spring Security, Authentication, Authorization, HTTP Basic Authentication, CSRF Protection, Security Filter Chain, SecurityContext | ✅ |
 
 ---
 
@@ -110,8 +111,7 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 - Primary Keys
 - Column Mapping
 - Embedded Objects
-- Attribute Overrides
-- Element Collection
+- Collections
 - Enum Mapping
 - LOB Mapping
 - Attribute Converter
@@ -132,66 +132,46 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 - Many-to-Many Mapping
 - Bidirectional Relationships
 - Cascade Operations
-- CascadeType
 - Lazy Loading
 - Eager vs Lazy Fetching
-- FetchType.LAZY
 - N+1 Query Problem
 - EntityGraph
-- Repository
-- CrudRepository
-- ListCrudRepository
-- PagingAndSortingRepository
-- ListPagingAndSortingRepository
-- JpaRepository
+- Spring Data JPA
 - Repository Hierarchy
-- Repository Proxy
+- CRUD Operations
 - Derived Query Methods
-- Query Method Keywords
-- @Query Annotation
+- JPQL
 - Native SQL Queries
-- JPQL (Java Persistence Query Language)
-- Parameter Binding
-- Optional
 - Pagination
-- Pageable
-- PageRequest
-- Page
-- Slice
 - Sorting
-- Sort
 - Database Transactions
 - ACID Properties
-- Atomicity
-- Consistency
-- Isolation
-- Durability
-- Transaction Boundary
 - @Transactional
-- Begin
-- Commit
-- Rollback
-- JDBC Transactions
-- JPA Transactions
-- Hibernate Transactions
-- Spring Transaction Management
 - Transaction Propagation
-- Propagation.REQUIRED
-- Propagation.REQUIRES_NEW
-- Propagation.SUPPORTS
-- Propagation.MANDATORY
-- Propagation.NOT_SUPPORTED
-- Propagation.NEVER
-- Propagation.NESTED
 - Isolation Levels
-- READ_UNCOMMITTED
-- READ_COMMITTED
-- REPEATABLE_READ
-- SERIALIZABLE
 - Dirty Read
 - Non-Repeatable Read
 - Phantom Read
-- Rollback Rules
+
+## Spring Security
+
+- Authentication
+- Authorization
+- Authentication Object
+- Principal
+- Credentials
+- Authorities
+- Roles
+- HTTP Basic Authentication
+- In-Memory User Authentication
+- SecurityContext
+- SecurityContextHolder
+- Security Filter Chain
+- CSRF Protection
+- CSRF Token
+- Stateful Authentication
+- Stateless Authentication
+- Spring Security Auto Configuration
 
 ---
 
@@ -216,6 +196,7 @@ springboot-learnings
 ├── 14-spring-data-jpa-demo
 ├── 15-transaction-intro-demo
 └── 16-transaction-propagation-isolation-demo
+└── 17-spring-security-basics-demo
 ```
 
 ---
