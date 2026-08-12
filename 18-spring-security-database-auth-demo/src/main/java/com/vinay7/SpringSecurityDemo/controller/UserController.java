@@ -5,7 +5,6 @@ import com.vinay7.SpringSecurityDemo.dto.UserRegisterRequestDto;
 import com.vinay7.SpringSecurityDemo.dto.UserRegisterResponseDto;
 import com.vinay7.SpringSecurityDemo.service.AuthService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.web.csrf.CsrfToken;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -32,17 +31,5 @@ public class UserController {
         return ResponseEntity.ok(userRegisterResponseDto);
     }
 
-    @PostMapping("/login")
-    public ResponseEntity<Boolean> login(
-            @RequestBody UserRegisterRequestDto registerRequestDto) {
-        Boolean loggedIn = authService.login(registerRequestDto);
-
-        return ResponseEntity.ok(loggedIn);
-    }
-
-    @GetMapping("/token")
-    public CsrfToken getToken(CsrfToken csrfToken) {
-        return csrfToken;
-    }
 
 }

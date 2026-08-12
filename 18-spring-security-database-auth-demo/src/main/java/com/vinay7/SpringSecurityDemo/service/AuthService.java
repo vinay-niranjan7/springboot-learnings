@@ -1,13 +1,11 @@
 package com.vinay7.SpringSecurityDemo.service;
 
-
 import com.vinay7.SpringSecurityDemo.dto.UserRegisterRequestDto;
 import com.vinay7.SpringSecurityDemo.dto.UserRegisterResponseDto;
+import com.vinay7.SpringSecurityDemo.entity.Role;
 import com.vinay7.SpringSecurityDemo.entity.User;
+import com.vinay7.SpringSecurityDemo.repository.RoleRepository;
 import com.vinay7.SpringSecurityDemo.repository.UserRepository;
-import lombok.Setter;
-import org.springframework.context.annotation.Bean;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -17,11 +15,16 @@ import java.util.Optional;
 public class AuthService {
 
     private UserRepository userRepository;
-    private PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+    private RoleRepository roleRepository;
+    private PasswordEncoder passwordEncoder;
 
     public AuthService(
-            UserRepository userRepository) {
+            UserRepository userRepository,
+            RoleRepository roleRepository,
+            PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
+        this.roleRepository = roleRepository;
+        this.passwordEncoder = passwordEncoder;
     }
 
     public UserRegisterResponseDto register(
@@ -36,6 +39,10 @@ public class AuthService {
         user.setPassword(encodedPassword);
         user.setEnabled(true);
 
+        Role role = roleRepository.findByName("ROLE_USER").get();
+
+        user.getRoles().add(role);
+
         userRepository.save(user);
 
         UserRegisterResponseDto responseDto = new
@@ -46,19 +53,5 @@ public class AuthService {
 
         return responseDto;
 
-    }
-
-    public Boolean login(UserRegisterRequestDto registerRequestDto) {
-        Optional<User> userOptional = userRepository.findByUsername(
-                registerRequestDto.getUsername());
-
-        User user = userOptional.get();
-
-        String encodedPassword = user.getPassword();
-
-        return passwordEncoder.matches(
-                registerRequestDto.getPassword(),
-                encodedPassword
-        );
     }
 }
