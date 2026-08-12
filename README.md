@@ -25,7 +25,7 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 | 15 | Transaction Intro Demo | Database Transactions, ACID Properties, @Transactional, Transaction Boundary, Commit, Rollback, JDBC, JPA & Hibernate Transactions | ✅ |
 | 16 | Transaction Propagation & Isolation Demo | Transaction Propagation, Isolation Levels, Concurrency Problems, @Transactional, Propagation, Rollback Rules | ✅ |
 | 17 | Spring Security Basics Demo | Spring Security, Authentication, Authorization, HTTP Basic Authentication, CSRF Protection, Security Filter Chain, SecurityContext | ✅ |
-| 18 | Spring Security Database Authentication Demo | Database Authentication, User Registration, User Login, BCrypt, UserDetails, UserDetailsService, Roles, Authorities, CSRF Protection | ✅ |
+| 18 | Spring Security Database Authentication Demo | Database Authentication, User Registration, User Login, BCrypt, UserDetails, UserDetailsService, DaoAuthenticationProvider, AuthenticationManager, SecurityFilterChain, Roles, Authorities, EntityGraph | ✅ |
 
 ---
 
@@ -163,27 +163,47 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 - Credentials
 - Authorities
 - Roles
+- GrantedAuthority
 - HTTP Basic Authentication
+- Form Login
 - In-Memory User Authentication
+- Database Authentication
+- User Registration
+- User Login
+- UserDetails
+- CustomUserDetails
+- UserDetailsService
+- CustomUserDetailsService
+- AuthenticationManager
+- ProviderManager
+- AuthenticationProvider
+- DaoAuthenticationProvider
+- UsernamePasswordAuthenticationToken
 - SecurityContext
 - SecurityContextHolder
 - Security Filter Chain
+- SecurityFilterChain
+- FilterChainProxy
+- DelegatingFilterProxy
+- RequestMatcher
+- HttpSecurity
+- Authentication Filters
+- UsernamePasswordAuthenticationFilter
+- BasicAuthenticationFilter
 - CSRF Protection
 - CSRF Token
 - Stateful Authentication
 - Stateless Authentication
 - Spring Security Auto Configuration
-- Database Authentication
-- User Registration
-- User Login
-- UserDetails
-- UserDetailsService
 - Password Security
 - Password Hashing
 - BCrypt
 - PasswordEncoder
+- Password Verification
 - User-Role Mapping
 - Many-to-Many User-Role Mapping
+- EntityGraph
+- Authentication Success & Failure
 
 ---
 
