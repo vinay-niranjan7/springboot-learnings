@@ -4,6 +4,7 @@ package com.vinay7.SpringSecurityDemo.controller;
 import com.vinay7.SpringSecurityDemo.dto.UserRegisterRequestDto;
 import com.vinay7.SpringSecurityDemo.dto.UserRegisterResponseDto;
 import com.vinay7.SpringSecurityDemo.service.AuthService;
+import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,7 +19,8 @@ public class UserController {
     }
 
     @GetMapping("/hello")
-    public String sayHello() {
+    public String sayHello(Authentication authentication) {
+
         return "Hello";
     }
 
