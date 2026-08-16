@@ -25,7 +25,7 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 | 15 | Transaction Intro Demo | Database Transactions, ACID Properties, @Transactional, Transaction Boundary, Commit, Rollback, JDBC, JPA & Hibernate Transactions | ✅ |
 | 16 | Transaction Propagation & Isolation Demo | Transaction Propagation, Isolation Levels, Concurrency Problems, @Transactional, Propagation, Rollback Rules | ✅ |
 | 17 | Spring Security Basics Demo | Spring Security, Authentication, Authorization, HTTP Basic Authentication, CSRF Protection, Security Filter Chain, SecurityContext | ✅ |
-| 18 | Spring Security Database Authentication Demo | Database Authentication, User Registration, User Login, BCrypt, UserDetails, UserDetailsService, DaoAuthenticationProvider, AuthenticationManager, SecurityFilterChain, Roles, Authorities, EntityGraph | ✅ |
+| 18 | Spring Security Database Authentication & JWT Demo | Database Authentication, User Registration, User Login, BCrypt, UserDetails, UserDetailsService, AuthenticationManager, DaoAuthenticationProvider, SecurityFilterChain, JWT, JWT Generation & Validation, Stateless Authentication, Roles, Authorities | ✅ |
 
 ---
 
@@ -205,6 +205,29 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 - EntityGraph
 - Authentication Success & Failure
 
+## JWT
+
+- JWT Structure
+- Header
+- Payload
+- Signature
+- Claims
+- Issuer
+- Subject
+- Expiration
+- HS256
+- JWT Secret Key
+- JWT Generation
+- JWT Validation
+- JwtEncoder
+- JwtDecoder
+- JwtClaimsSet
+- JwtAuthenticationConverter
+- JwtGrantedAuthoritiesConverter
+- Bearer Token Authentication
+- OAuth2 Resource Server
+- Stateless JWT Authentication
+
 ---
 
 # 📁 Repository Structure
@@ -229,7 +252,7 @@ springboot-learnings
 ├── 15-transaction-intro-demo
 ├── 16-transaction-propagation-isolation-demo
 ├── 17-spring-security-basics-demo
-└── 18-spring-security-database-auth-demo
+└── 18-spring-security-database-auth-jwt-demo
 ```
 
 ---
