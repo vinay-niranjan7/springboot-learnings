@@ -26,6 +26,7 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 | 16 | Transaction Propagation & Isolation Demo | Transaction Propagation, Isolation Levels, Concurrency Problems, @Transactional, Propagation, Rollback Rules | ✅ |
 | 17 | Spring Security Basics Demo | Spring Security, Authentication, Authorization, HTTP Basic Authentication, CSRF Protection, Security Filter Chain, SecurityContext | ✅ |
 | 18 | Spring Security Database Authentication & JWT Demo | Database Authentication, User Registration, User Login, BCrypt, UserDetails, UserDetailsService, AuthenticationManager, DaoAuthenticationProvider, SecurityFilterChain, JWT, JWT Generation & Validation, Stateless Authentication, Roles, Authorities | ✅ |
+| 19 | OAuth 2.0, OpenID Connect & Google Login Demo | OAuth 2.0, OpenID Connect, Google Login, Authorization Code Flow, OAuth2 Client, OIDC, Access Token, ID Token, Scopes, Consent, OIDC User Service, Session-Based Authentication | ✅ |
 
 ---
 
@@ -228,6 +229,32 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 - OAuth2 Resource Server
 - Stateless JWT Authentication
 
+## OAuth 2.0 & OpenID Connect
+
+- OAuth 2.0
+- OpenID Connect (OIDC)
+- Authentication
+- Authorization
+- OAuth2 Client
+- Google Login
+- Authorization Code Flow
+- Authorization Code
+- Access Token
+- ID Token
+- Refresh Token
+- OAuth Scopes
+- Consent
+- State Parameter
+- PKCE
+- OIDC Claims
+- OidcUser
+- OidcUserService
+- Custom OIDC User Service
+- Provider + Subject Mapping
+- Google Identity Provider
+- Redirect URI
+- Session-Based Authentication
+
 ---
 
 # 📁 Repository Structure
@@ -252,7 +279,8 @@ springboot-learnings
 ├── 15-transaction-intro-demo
 ├── 16-transaction-propagation-isolation-demo
 ├── 17-spring-security-basics-demo
-└── 18-spring-security-database-auth-jwt-demo
+├── 18-spring-security-database-auth-jwt-demo
+└── 19-oauth2-oidc-google-login-demo
 ```
 
 ---
