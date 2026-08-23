@@ -27,6 +27,7 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 | 17 | Spring Security Basics Demo | Spring Security, Authentication, Authorization, HTTP Basic Authentication, CSRF Protection, Security Filter Chain, SecurityContext | ✅ |
 | 18 | Spring Security Database Authentication & JWT Demo | Database Authentication, User Registration, User Login, BCrypt, UserDetails, UserDetailsService, AuthenticationManager, DaoAuthenticationProvider, SecurityFilterChain, JWT, JWT Generation & Validation, Stateless Authentication, Roles, Authorities | ✅ |
 | 19 | OAuth 2.0, OpenID Connect & Google Login Demo | OAuth 2.0, OpenID Connect, Google Login, Authorization Code Flow, OAuth2 Client, OIDC, Access Token, ID Token, Scopes, Consent, OIDC User Service, Session-Based Authentication | ✅ |
+| 20 | Spring Boot Testing Demo | JUnit 5, Mockito, Unit Testing, Service Testing, Controller Testing, MockMvc, @WebMvcTest, Repository Testing, @DataJpaTest, @SpringBootTest | ✅ |
 
 ---
 
@@ -54,6 +55,9 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 
 - REST APIs
 - Postman
+- JUnit 5
+- Mockito
+- MockMvc
 
 ### Java EE
 
@@ -255,6 +259,32 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 - Redirect URI
 - Session-Based Authentication
 
+## Testing
+
+- JUnit 5
+- Unit Testing
+- Mockito
+- Mocking Dependencies
+- @Mock
+- @InjectMocks
+- @MockitoBean
+- MockitoExtension
+- Assertions
+- Exception Testing
+- when()
+- verify()
+- never()
+- Service Layer Testing
+- Controller Testing
+- @WebMvcTest
+- MockMvc
+- JSON Response Testing
+- Repository Testing
+- @DataJpaTest
+- @SpringBootTest
+- Spring Boot Context Testing
+- Arrange → Act → Assert
+
 ---
 
 # 📁 Repository Structure
@@ -280,7 +310,8 @@ springboot-learnings
 ├── 16-transaction-propagation-isolation-demo
 ├── 17-spring-security-basics-demo
 ├── 18-spring-security-database-auth-jwt-demo
-└── 19-oauth2-oidc-google-login-demo
+├── 19-oauth2-oidc-google-login-demo
+└── 20-spring-boot-testing-demo
 ```
 
 ---
