@@ -302,7 +302,7 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 - `log4j2-spring.xml`
 - `application.properties`
 - Console & File Logging
-```
+
 ---
 
 # 📁 Repository Structure
@@ -329,7 +329,7 @@ springboot-learnings
 ├── 17-spring-security-basics-demo
 ├── 18-spring-security-database-auth-jwt-demo
 ├── 19-oauth2-oidc-google-login-demo
-└── 20-spring-boot-testing-demo
+├── 20-spring-boot-testing-demo
 └── 21-logging-demo
 ```
 
