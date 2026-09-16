@@ -28,6 +28,7 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 | 18 | Spring Security Database Authentication & JWT Demo | Database Authentication, User Registration, User Login, BCrypt, UserDetails, UserDetailsService, AuthenticationManager, DaoAuthenticationProvider, SecurityFilterChain, JWT, JWT Generation & Validation, Stateless Authentication, Roles, Authorities | ✅ |
 | 19 | OAuth 2.0, OpenID Connect & Google Login Demo | OAuth 2.0, OpenID Connect, Google Login, Authorization Code Flow, OAuth2 Client, OIDC, Access Token, ID Token, Scopes, Consent, OIDC User Service, Session-Based Authentication | ✅ |
 | 20 | Spring Boot Testing Demo | JUnit 5, Mockito, Unit Testing, Service Testing, Controller Testing, MockMvc, @WebMvcTest, Repository Testing, @DataJpaTest, @SpringBootTest | ✅ |
+| 21 | Logging Demo | Log4j2, Logger, Log Levels, Console Appender, File Appender, PatternLayout, Package-specific Logging | ✅ |
 
 ---
 
@@ -42,6 +43,7 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 - Hibernate ORM
 - Spring JDBC
 - Spring AOP
+- Log4j2
 
 ### Database
 
@@ -285,6 +287,22 @@ A collection of hands-on Spring Boot microprojects created while learning variou
 - Spring Boot Context Testing
 - Arrange → Act → Assert
 
+
+## Logging
+
+- Log4j2
+- Logger
+- Log Levels
+- Console Appender
+- File Appender
+- PatternLayout
+- AppenderRef
+- Package-specific Logging
+- `additivity`
+- `log4j2-spring.xml`
+- `application.properties`
+- Console & File Logging
+```
 ---
 
 # 📁 Repository Structure
@@ -312,6 +330,7 @@ springboot-learnings
 ├── 18-spring-security-database-auth-jwt-demo
 ├── 19-oauth2-oidc-google-login-demo
 └── 20-spring-boot-testing-demo
+└── 21-logging-demo
 ```
 
 ---
