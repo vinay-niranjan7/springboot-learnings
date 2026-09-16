@@ -1,0 +1,14 @@
+22:36:50 INFO  com.vinay7.LoggingDemo.LoggingDemoApplication - Starting LoggingDemoApplication using Java 25.0.2 with PID 368 (D:\VINAY\spring projects\Telusko\LoggingDemo\target\classes started by Admin in D:\VINAY\spring projects\Telusko\LoggingDemo)
+22:36:50 INFO  com.vinay7.LoggingDemo.LoggingDemoApplication - No active profile set, falling back to 1 default profile: "default"
+22:36:52 INFO  com.vinay7.LoggingDemo.LoggingDemoApplication - Started LoggingDemoApplication in 2.577 seconds (process running for 3.291)
+22:37:39 INFO  com.vinay7.LoggingDemo.LoggingDemoApplication - Starting LoggingDemoApplication using Java 25.0.2 with PID 10440 (D:\VINAY\spring projects\Telusko\LoggingDemo\target\classes started by Admin in D:\VINAY\spring projects\Telusko\LoggingDemo)
+22:37:39 INFO  com.vinay7.LoggingDemo.LoggingDemoApplication - No active profile set, falling back to 1 default profile: "default"
+22:37:41 INFO  com.vinay7.LoggingDemo.LoggingDemoApplication - Started LoggingDemoApplication in 2.977 seconds (process running for 4.727)
+22:37:54 INFO  com.vinay7.LoggingDemo.LoggingDemoApplication - Starting LoggingDemoApplication using Java 25.0.2 with PID 10480 (D:\VINAY\spring projects\Telusko\LoggingDemo\target\classes started by Admin in D:\VINAY\spring projects\Telusko\LoggingDemo)
+22:37:54 INFO  com.vinay7.LoggingDemo.LoggingDemoApplication - No active profile set, falling back to 1 default profile: "default"
+22:37:55 INFO  com.vinay7.LoggingDemo.LoggingDemoApplication - Started LoggingDemoApplication in 2.523 seconds (process running for 3.313)
+22:38:24 INFO  com.vinay7.LoggingDemo.controller.HelloController - greet() method started
+22:38:24 INFO  com.vinay7.LoggingDemo.service.HelloService - greet() method started
+22:38:24 INFO  com.vinay7.LoggingDemo.service.HelloService - Returning message: Welcome to Logging Demo
+22:38:24 INFO  com.vinay7.LoggingDemo.controller.HelloController - Message received from service: Welcome to Logging Demo
+22:38:24 INFO  com.vinay7.LoggingDemo.controller.HelloController - greet() method completed
